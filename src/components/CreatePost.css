@@ -1,0 +1,22 @@
+/* components/CreatePost.css */
+.create-post-container {
+  min-height: 100vh;
+}
+
+.post-card {
+  max-width: 600px;
+  width: 100%;
+  box-shadow: var(--card-shadow);
+  border-radius: var(--border-radius);
+}
+
+.post-card .form-group {
+  margin-bottom: var(--spacing-medium);
+}
+
+.post-card .form-control,
+.post-card .form-control:focus {
+  border-radius: var(--border-radius);
+}
+
+/* Additional styles as needed */

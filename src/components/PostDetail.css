@@ -1,0 +1,38 @@
+/* components/PostDetail.css */
+.post-detail-card {
+  margin-bottom: var(--spacing-large);
+  box-shadow: var(--card-shadow);
+  border-radius: var(--border-radius);
+}
+
+.post-detail-card .card-body {
+  padding: var(--spacing-medium);
+}
+
+.post-detail-card .card-title {
+  font-size: var(--font-size-large);
+  color: var(--text-color);
+}
+
+.post-detail-card .text-muted {
+  font-size: 0.85rem;
+  margin-bottom: var(--spacing-small);
+}
+
+.post-detail-card .text-justify {
+  font-size: var(--font-size-normal);
+  margin-bottom: var(--spacing-medium);
+}
+
+.back-to-feed-btn {
+  display: block;
+  width: 100%;
+  margin-top: var(--spacing-medium);
+  border-radius: var(--border-radius);
+}
+
+/* Styles for Like and Save buttons */
+.post-detail-card .btn {
+  margin-top: var(--spacing-small);
+  border-radius: var(--border-radius);
+}

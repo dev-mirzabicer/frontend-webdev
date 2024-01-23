@@ -1,0 +1,33 @@
+/* components/Profile.css */
+.profile-container {
+  min-height: 100vh;
+  padding: var(--spacing-large);
+}
+
+.profile-card {
+  box-shadow: var(--card-shadow);
+  border-radius: var(--border-radius);
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-large);
+}
+
+.edit-profile-btn {
+  border-radius: var(--border-radius);
+}
+
+.profile-content h3 {
+  font-size: var(--font-size-large);
+  color: var(--text-color);
+  margin-bottom: var(--spacing-medium);
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--spacing-medium);
+}

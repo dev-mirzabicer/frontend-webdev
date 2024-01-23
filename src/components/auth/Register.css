@@ -1,0 +1,21 @@
+/* components/auth/Register.css */
+.register-container {
+  min-height: 100vh;
+}
+
+.auth-card {
+  max-width: 400px;
+  width: 100%;
+  box-shadow: var(--card-shadow);
+  border-radius: var(--border-radius);
+}
+
+.auth-card .form-group {
+  margin-bottom: var(--spacing-medium);
+}
+
+.auth-card .form-control {
+  border-radius: var(--border-radius);
+}
+
+/* Add more custom styles as needed */

@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* styles/global.css */
+:root {
+  /* Color scheme */
+  --primary-color: #0056b3; /* Deeper Blue */
+  --text-color: #4a4a4a; /* Darker Grey for Better Readability */
+  --link-hover-color: #003366; /* Darker Blue for Link Hover */
+  --secondary-color: #6c757d; /* Grey */
+  --error-color: #dc3545; /* Red */
+  --background-color: #f8f9fa; /* Light Grey */
+  --link-color: #007bff; /* Blue, same as primary for consistency */
+
+  /* Typography */
+  --font-family: "Segoe UI", sans-serif;
+  --font-size-large: 1.4rem; /* Larger Titles */
+  --font-size-normal: 1.1rem; /* Slightly Larger Text */
+  --font-size-small: 0.875rem;
+
+  /* Hover Animation */
+  --hover-scale: 1.03; /* Scale effect for hover */
+
+  /* Spacing */
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 2rem;
+
+  /* Borders and Radius */
+  --border-radius: 0.25rem;
+  --border-color: #dee2e6; /* Light Grey Border */
+  --card-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More Pronounced Shadow */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  line-height: 1.6;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
 }
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+
+  &:hover {
+    /* text-decoration: underline; */
+    color: var(--link-hover-color);
+  }
+}
+
+a,
+.post-item-card,
+.btn {
+  transition: transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+a:hover,
+.post-item-card:hover,
+.btn:hover {
+  transform: scale(var(--hover-scale)); /* Scale up on hover */
+}
+
+x h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color);
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+/* Additional global styles or overrides for Bootstrap components if needed */

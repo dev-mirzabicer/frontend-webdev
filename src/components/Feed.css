@@ -1,0 +1,62 @@
+/* components/Feed.css */
+.feed-container .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.feed-container .col-md-4 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.post-item-card {
+  cursor: pointer;
+  box-shadow: var(--card-shadow);
+  border-radius: var(--border-radius);
+  transition: transform 0.3s ease;
+  background-color: var(--background-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.post-item-card:hover {
+  transform: scale(1.03);
+}
+
+.post-item-card .card-img-top {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  height: 200px;
+  object-fit: cover;
+}
+
+.post-item-card .card-body {
+  padding: var(--spacing-medium);
+}
+
+.post-item-card .card-title {
+  font-size: var(--font-size-large);
+  margin-bottom: var(--spacing-small);
+  color: var(--text-color);
+}
+
+.post-item-card .card-text {
+  font-size: var(--font-size-normal);
+  color: var(--text-color);
+}
+
+.post-item-card .text-muted {
+  font-size: 0.8rem;
+}
+
+.post-save-button {
+  position: absolute;
+  top: 50%; /* Align vertically in the middle */
+  right: 10px; /* Adjust this value to control the distance from the right edge */
+  transform: translateY(-150%); /* Center vertically */
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+.post-save-button:hover {
+  color: var(--primary-color);
+}

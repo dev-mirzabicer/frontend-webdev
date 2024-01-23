@@ -1,0 +1,21 @@
+/* components/auth/Login.css */
+.login-container {
+  min-height: 100vh;
+}
+
+.login-card {
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.login-card .form-group {
+  margin-bottom: 1rem;
+}
+
+.login-card .form-control {
+  border-radius: 5px;
+}
+
+/* Add more custom styles as needed */
